@@ -5,6 +5,10 @@ ximu = ximureceiver.XimuReceiver()
 # connecting x-IMU over USB
 s=serial.Serial("/dev/ttyUSB0", 115200)
 
+# connecting x-IMU over Bluetooth after Paired and Connected
+#s=serial.Serial("/dev/rfcomm0", 115200)
+
+
 # infinite loop for getting data
 def main():
     while True:
